@@ -1,7 +1,7 @@
 # Tracking medical student research output using R and Google Scholar
 ### Raoul R. Wadhwa, Bruce Spevak, Neil B. Mehta
 
-### Cleveland Clinic Lerner College of Medicine of Case Western Reserve University
+### [Cleveland Clinic Lerner College of Medicine](https://portals.clevelandclinic.org/cclcm) of [Case Western Reserve University](https://case.edu/medicine)
 
 ## Purpose
 
@@ -37,3 +37,7 @@ This work used the following tools:
 * [R programming language](https://www.R-project.org/)
 * [scholar](https://CRAN.R-project.org/package=scholar) package for R
 * [Google Scholar](https://scholar.google.com)
+
+## Contribute
+
+For any comments, suggestions, questions, or bug reports, please use the [Issues page](https://github.com/rrrlw/med-student-research/issues) for this GitHub repo.
