@@ -24,7 +24,9 @@ scholar.data <- read.csv("Data.csv",
                                         "integer", "character"))
 
 # correct wrong IDs
-scholar.data[scholar.data$Google.Scholar.ID == "v9UqDQAAAAJ", ]$Google.Scholar.ID <- "_v9UqDQAAAAJ"
+if ("v9UqDQAAAAJ" %in% scholar.data$Google.Scholar.ID) {
+  scholar.data[scholar.data$Google.Scholar.ID == "v9UqDQAAAAJ", ]$Google.Scholar.ID <- "_v9UqDQAAAAJ"
+}
 
 #####PROCESSING#####
 # save data into data frame
@@ -43,8 +45,8 @@ vapply(X = 1:nrow(profile.df),
        FUN.VALUE = logical(1),
        FUN = function(i) {
          # get profile data from Google Scholar
-         print(profile.df$ID[i])
-         print(paste("Row", i, "out of", nrow(profile.df)))
+         #print(profile.df$ID[i])
+         #print(paste("Row", i, "out of", nrow(profile.df)))
          failed <- FALSE
          tryCatch(curr.prof <- get_profile(profile.df$ID[i]),
                   error = function(e) {failed <<- TRUE})
@@ -55,27 +57,27 @@ vapply(X = 1:nrow(profile.df),
            
            return(FALSE)
          }
-         print("Part 1")
+         #print("Part 1")
          
          # store appropriate data into data frame
          profile.df$Name[i] <<- name.val(first = scholar.data$First.Name[i],
                                          middle = scholar.data$Middle.Name.or.Initial[i],
                                          last = scholar.data$Last.Name[i])
-         print("Part 1.1")
+         #print("Part 1.1")
          profile.df$h.index[i] <<- ifelse(length(curr.prof$h_index) == 0,
                                           0, curr.prof$h_index)
-         print("Part 1.2")
+         #print("Part 1.2")
          profile.df$i10.index[i] <<- ifelse(length(curr.prof$i10_index) == 0,
                                             0, curr.prof$i10_index)
-         print("Part 1.3")
+         #print("Part 1.3")
          profile.df$total.cites[i] <<- ifelse(length(curr.prof$total_cites) == 0,
                                               0, curr.prof$total_cites)
-         print("Part 2")
+         #print("Part 2")
          
          # print updates to screen
          cat("DONE WITH ", profile.df$Name[i], "\n", sep = "")
          
-         print("Part 2.1")
+         #print("Part 2.1")
          
          # return success value
          return(TRUE)
