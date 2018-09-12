@@ -6,7 +6,7 @@ Tracking educational outcomes of medical students is important to ensure that th
 One relevant educational outcome in the field of academic medicine is research output during the medical school years.
 Google Scholar provides a convenient central database that automatically updates as students publish their research.
 This tool thus provides educators and education researchers with a straightforward method to track research outcomes for medical students.
-Note that the functionality can easily be extended to include any member of academia with a Google Scholar profile.
+Note that the functionality can easily be extended to track the research output of any member of academia with a Google Scholar profile.
 
 ## Getting Started
 
