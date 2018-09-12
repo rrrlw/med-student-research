@@ -85,7 +85,7 @@ vapply(X = 1:nrow(profile.df),
 
 #####OUTPUT#####
 write.table(x = profile.df,
-            file = "CCLCMProfiles.csv",
+            file = "Profiles.csv",
             append = FALSE,
             col.names = TRUE,
             row.names = FALSE,
