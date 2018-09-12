@@ -20,7 +20,7 @@ The following lines of code can be typed into a Unix Terminal to collect cross-s
 
 ```
 git clone https://github.com/rrrlw/med-student-research.git
-cd med-student-research.git
+cd med-student-research
 Rscript collectPubs.R
 Rscript collectProfiles.R
 ```
