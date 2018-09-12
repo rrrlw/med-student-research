@@ -1,4 +1,7 @@
 # A tool to track medical student research output using Google Scholar
+### Raoul R. Wadhwa, Bruce Spevak, Neil B. Mehta
+
+### Cleveland Clinic Lerner College of Medicine of Case Western Reserve University
 
 ## Purpose
 
