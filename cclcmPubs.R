@@ -24,8 +24,10 @@ scholar.data <- read.csv("Data.csv",
                                         "integer", "character"))
 
 # correct wrong IDs
-scholar.data[scholar.data$Google.Scholar.ID == "v9UqDQAAAAJ", ]$Google.Scholar.ID <- "_v9UqDQAAAAJ"
-
+if ("v9UqDQAAAAJ" %in% scholar.data$Google.Scholar.ID) {
+  scholar.data[scholar.data$Google.Scholar.ID == "v9UqDQAAAAJ", ]$Google.Scholar.ID <- "_v9UqDQAAAAJ"
+}
+  
 # open connection for data output and write header line
 data.out <- file(description = "CCLCMPubs.csv", open = "w")
 cat("title", "author", "journal", "number", "cites",
