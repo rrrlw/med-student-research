@@ -34,8 +34,8 @@ The code above should generate two CSV files:
 
 This work used the following tools:
 
-* [R programming language](https://www.R-project.org/)
-* [scholar](https://CRAN.R-project.org/package=scholar) package for R
+* [R programming language](https://www.R-project.org/) (>= 3.5)
+* [scholar](https://CRAN.R-project.org/package=scholar) package for R (>= 0.1.7)
 * [Google Scholar](https://scholar.google.com)
 
 ## Contribute
