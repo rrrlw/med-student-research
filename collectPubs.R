@@ -31,7 +31,7 @@ if ("v9UqDQAAAAJ" %in% scholar.data$Google.Scholar.ID) {
 # open connection for data output and write header line
 data.out <- file(description = "Pubs.csv", open = "w")
 cat("title", "author", "journal", "number", "cites",
-    "year", "cid", "student name", "report generated date" , "pubid", "impactfactor", "eigenfactor",
+    "year", "cid", "pubid" , "student name", "report generated date" , "impactfactor", "eigenfactor",
     file = data.out, sep = ",", append = FALSE)
 cat("\n", file = data.out, append = TRUE)
 
