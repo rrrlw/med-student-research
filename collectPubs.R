@@ -31,7 +31,7 @@ if ("v9UqDQAAAAJ" %in% scholar.data$Google.Scholar.ID) {
 # open connection for data output and write header line
 data.out <- file(description = "Pubs.csv", open = "w")
 cat("title", "author", "journal", "number", "cites",
-    "year", "cid", "pubid" , "student name", "report generated date" , "impactfactor", "eigenfactor",
+    "year", "cid", "pubid" , "student name", "report generated date" , "impactfactor", "eigenfactor", "Google Scholar ID",
     file = data.out, sep = ",", append = FALSE)
 cat("\n", file = data.out, append = TRUE)
 
@@ -69,7 +69,7 @@ vapply(X = 1:nrow(scholar.data),
          
          # add impact factor and eigenfactor
          impact <- get_impactfactor(journals = curr.pubs$journal, max.distance = 0.1)
-         curr.pubs <- cbind(curr.pubs, impact$ImpactFactor, impact$Eigenfactor)
+         curr.pubs <- cbind(curr.pubs, impact$ImpactFactor, impact$Eigenfactor, scholar.data$Google.Scholar.ID[curr.index])
          #print(impact)
          
          # output data
