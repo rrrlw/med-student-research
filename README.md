@@ -1,5 +1,5 @@
 # Tracking medical student research output using R and Google Scholar
-### Raoul R. Wadhwa, Bruce Spevak, Neil B. Mehta
+### Raoul R. Wadhwa, Sneha Sharma, Bruce Spevak, Neil B. Mehta
 
 ### [Cleveland Clinic Lerner College of Medicine](https://portals.clevelandclinic.org/cclcm) of [Case Western Reserve University](https://case.edu/medicine)
 
